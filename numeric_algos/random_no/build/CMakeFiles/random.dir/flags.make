@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/include 
+CXX_INCLUDES = -I/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/include 
 

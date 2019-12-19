@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS
+CMAKE_SOURCE_DIR = /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/build
+CMAKE_BINARY_DIR = /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/random.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/random.dir/flags.make
 
 CMakeFiles/random.dir/src/lcgs.cpp.o: CMakeFiles/random.dir/flags.make
 CMakeFiles/random.dir/src/lcgs.cpp.o: ../src/lcgs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/random.dir/src/lcgs.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/random.dir/src/lcgs.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/src/lcgs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/random.dir/src/lcgs.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/random.dir/src/lcgs.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/src/lcgs.cpp
 
 CMakeFiles/random.dir/src/lcgs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/random.dir/src/lcgs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/src/lcgs.cpp > CMakeFiles/random.dir/src/lcgs.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/src/lcgs.cpp > CMakeFiles/random.dir/src/lcgs.cpp.i
 
 CMakeFiles/random.dir/src/lcgs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/random.dir/src/lcgs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/src/lcgs.cpp -o CMakeFiles/random.dir/src/lcgs.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/src/lcgs.cpp -o CMakeFiles/random.dir/src/lcgs.cpp.s
 
 CMakeFiles/random.dir/src/main_lcgs.cpp.o: CMakeFiles/random.dir/flags.make
 CMakeFiles/random.dir/src/main_lcgs.cpp.o: ../src/main_lcgs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/random.dir/src/main_lcgs.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/random.dir/src/main_lcgs.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/src/main_lcgs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/random.dir/src/main_lcgs.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/random.dir/src/main_lcgs.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/src/main_lcgs.cpp
 
 CMakeFiles/random.dir/src/main_lcgs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/random.dir/src/main_lcgs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/src/main_lcgs.cpp > CMakeFiles/random.dir/src/main_lcgs.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/src/main_lcgs.cpp > CMakeFiles/random.dir/src/main_lcgs.cpp.i
 
 CMakeFiles/random.dir/src/main_lcgs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/random.dir/src/main_lcgs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/src/main_lcgs.cpp -o CMakeFiles/random.dir/src/main_lcgs.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/src/main_lcgs.cpp -o CMakeFiles/random.dir/src/main_lcgs.cpp.s
 
 # Object files for target random
 random_OBJECTS = \
@@ -95,7 +95,7 @@ random: CMakeFiles/random.dir/src/lcgs.cpp.o
 random: CMakeFiles/random.dir/src/main_lcgs.cpp.o
 random: CMakeFiles/random.dir/build.make
 random: CMakeFiles/random.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable random"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable random"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/random.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/random.dir/clean:
 .PHONY : CMakeFiles/random.dir/clean
 
 CMakeFiles/random.dir/depend:
-	cd /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/build /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/build /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/build/CMakeFiles/random.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/build /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/build /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/build/CMakeFiles/random.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/random.dir/depend
 
