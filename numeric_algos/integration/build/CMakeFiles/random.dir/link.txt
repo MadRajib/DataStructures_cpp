@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/random.dir/src/intergal.cpp.o CMakeFiles/random.dir/src/main.cpp.o  -o random 

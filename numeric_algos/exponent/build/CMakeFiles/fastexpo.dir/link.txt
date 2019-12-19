@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/fastexpo.dir/src/fastExpo.cpp.o CMakeFiles/fastexpo.dir/src/main.cpp.o  -o fastexpo 

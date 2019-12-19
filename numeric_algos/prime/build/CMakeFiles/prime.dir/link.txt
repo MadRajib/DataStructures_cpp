@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/prime.dir/src/fastExpo.cpp.o CMakeFiles/prime.dir/src/lcgs.cpp.o CMakeFiles/prime.dir/src/main.cpp.o CMakeFiles/prime.dir/src/prime.cpp.o  -o prime 
