@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/random.dir/src/lcgs.cpp.o CMakeFiles/random.dir/src/main_lcgs.cpp.o  -o random 

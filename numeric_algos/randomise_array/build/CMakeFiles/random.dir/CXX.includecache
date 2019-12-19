@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/randomise_array/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
+

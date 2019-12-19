@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/lcgs.h
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/src/lcgs.cpp
+lcgs.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/random_no/LCGS/src/lcgs.h
+iostream
+-
+

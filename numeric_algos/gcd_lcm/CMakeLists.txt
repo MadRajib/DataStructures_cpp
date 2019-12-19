@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8.9)
+project(GCD_LCM)
+include_directories(include)
+file(GLOB SOURCES "src/*cpp")
+add_executable(GCD_LCM ${SOURCES})

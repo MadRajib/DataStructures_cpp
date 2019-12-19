@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/GCD_LCM.dir/src/gcdlcm.cpp.o CMakeFiles/GCD_LCM.dir/src/main.cpp.o  -o GCD_LCM 

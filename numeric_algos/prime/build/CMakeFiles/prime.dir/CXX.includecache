@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/fastExpo.h
+
+../include/lcgs.h
+
+../include/prime.h
+cmath
+-
+vector
+-
+lcgs.h
+../include/lcgs.h
+fastExpo.h
+../include/fastExpo.h
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/prime/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
+cmath
+-
+prime.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/numeric_algos/prime/src/prime.h
+
