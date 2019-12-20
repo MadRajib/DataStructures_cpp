@@ -15,6 +15,14 @@ void print(Cell *i){
     cout <<endl;
 }
 
+void print(DCell *i,const DCell *end){
+    while(i->next!= end){
+        cout<<i->next->value<<" ";
+        i = i->next;
+    }
+    cout <<endl;
+}
+
 int main(int argc, char const *argv[]){
 
     Llist l = Llist();
@@ -54,5 +62,40 @@ int main(int argc, char const *argv[]){
     
     print(beg);
 
+
+    DLlist dl = DLlist();
+    auto dbeg = dl.begin();
+    auto dend = dl.end();
+
+    dl.addAtBegining(12);
+    dl.addAtBegining(15);
+    print(dbeg,dend);
+
+    dl.addAtEnd(13);
+    print(dbeg,dend);
+
+    dl.insertAfter(14,8);
+    print(dbeg,dend);
+
+    dl.insertAfter(15,9);
+    print(dbeg,dend);
+
+    dl.insertAfter(12,10);
+    print(dbeg,dend);
+
+    dl.deleteCell(8);
+    print(dbeg,dend);
+
+    dl.deleteCell(15);
+    print(dbeg,dend);
+
+    dl.deleteCell(12);
+    print(dbeg,dend);
+
+    dl.destroyList();
+    print(dbeg,dend);
+
+    dl.addAtBegining(12);
+    print(dbeg,dend);
     return 0;
 }
