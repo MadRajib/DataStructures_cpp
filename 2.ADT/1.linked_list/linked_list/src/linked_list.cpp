@@ -67,9 +67,38 @@ void Llist::destroyList(){
     }
 
 }
+void Llist::copyList(Llist ll){
+     this->destroyList();
+     Cell *last_added = top;
+     Cell *old_cell = ll.begin()->next;
+     while(old_cell != nullptr){
+         last_added->next = new Cell(old_cell->value);
+         last_added = last_added->next;
+         old_cell = old_cell->next;
+     }
+     last_added->next = nullptr;
+}
+void Llist::isort(){
+     Cell * iter = top->next;
+     Llist ll = Llist();
+     while(iter != nullptr){
+         ll.insertSorted(iter->value);
+         iter= iter->next;
+     }
+
+     Llist::copyList(ll);
+}
 
 Cell *Llist::begin(){
     return this->top;    
+}
+void Llist::print(){
+    Cell *i = this->top;
+    while(i->next!= nullptr){
+        std::cout<<i->next->value<<" ";
+        i = i->next;
+    }
+    std::cout <<std::endl;
 }
 
 

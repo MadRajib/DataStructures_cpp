@@ -43,6 +43,9 @@ int main(int argc, char const *argv[]){
     l.insertAfter(7,15);
     l.insertAfter(9,16);
     print(beg);
+    cout<<"sorting"<<endl;
+    l.isort();
+    print(beg);
 
 
     l.deleteCell(10);
@@ -103,6 +106,13 @@ int main(int argc, char const *argv[]){
     l.insertSorted(2);
 
     print(beg);
+
+    Llist l2  = Llist();
+    l2.copyList(l);
+
+    beg = l2.begin();
+    print(beg);
     
+
     return 0;
 }

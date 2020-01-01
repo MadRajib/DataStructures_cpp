@@ -1,3 +1,4 @@
+#include <iostream>
 /* Single linked list cell */
 struct Cell{
     Cell() = default;
@@ -26,7 +27,10 @@ class Llist{
         void insertSorted(int);
         void deleteCell(int);
         void destroyList();
+        void copyList(Llist );
+        void isort();
         Cell *begin();
+        void print();
 };
 
 /* Doubly linked list class */

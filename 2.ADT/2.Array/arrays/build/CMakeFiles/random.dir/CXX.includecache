@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/arrays.h
+cstddef
+-
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/arrays.cpp
+arrays.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/arrays.h
+

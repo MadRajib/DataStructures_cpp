@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/linked_list.h
+iostream
+-
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/linked_list.cpp
+linked_list.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/linked_list.h
+

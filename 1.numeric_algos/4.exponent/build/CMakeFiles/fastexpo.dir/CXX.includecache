@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/fastExpo.h
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/1.numeric_algos/4.exponent/src/fastExpo.cpp
+fastExpo.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/1.numeric_algos/4.exponent/src/fastExpo.h
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/1.numeric_algos/4.exponent/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
+fastExpo.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/1.numeric_algos/4.exponent/src/fastExpo.h
+
