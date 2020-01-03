@@ -25,7 +25,7 @@ void print(DCell *i,const DCell *end){
 
 int main(int argc, char const *argv[]){
 
-    Llist l = Llist();
+    Llist l = new Llist();
     auto beg = l.begin();
 
     l.addAtBegining(12);
