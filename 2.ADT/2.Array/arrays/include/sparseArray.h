@@ -1,5 +1,7 @@
 #ifndef sparseArray_h
 #define sparseArray_h
+
+#define DEFAULT_VALUE -1
 #include <iostream>
 struct Array_entry{
             int colNum;
@@ -18,6 +20,7 @@ class SparseArray{
 
         SparseArray();
         void setValue(int r,int c,int v);
+        int getValue(int r,int c);
         Array_row * FindRowBefore(int r);
         Array_entry * FindColBefore(int c,Array_entry *sentinel);
         void print();

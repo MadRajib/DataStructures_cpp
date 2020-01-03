@@ -69,12 +69,15 @@ int main(int argc, char const *argv[]){
    
    sArray.print();
    
-   sArray.setValue(0,0,1);
-   sArray.setValue(0,1,2);
+   sArray.setValue(1,0,1);
+   sArray.setValue(1,1,2);
    sArray.setValue(5,0,3);
    sArray.setValue(100,100,19);
-   
+   sArray.setValue(70,100,29);
+   sArray.setValue(70,100,39);
    sArray.print();
-
+   cout<< sArray.getValue(1,0) <<endl;
+   cout<< sArray.getValue(100,100) <<endl;
+   cout<< sArray.getValue(0,10) <<endl;
    return 0;
 }

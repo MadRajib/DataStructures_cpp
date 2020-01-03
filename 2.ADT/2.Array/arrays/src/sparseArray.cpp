@@ -8,8 +8,9 @@ void SparseArray::print(){
     Array_row *r_iter = this->top;
     while(r_iter->next_row!=nullptr){
         Array_entry *c_iter = r_iter->next_row->sentinel;
+        std::cout<<"rowNow: "<<r_iter->next_row->rowNum;        
         while(c_iter->next_entry!=nullptr){
-            std::cout<<c_iter->next_entry->value<<" ";
+            std::cout<<" colNum:"<<c_iter->next_entry->colNum<<" val:"<<c_iter->next_entry->value<<" ,";
             c_iter = c_iter->next_entry;
         }
         std::cout<<std::endl;
@@ -56,7 +57,20 @@ void SparseArray::setValue(int r,int c,int v){
     //se the value;
     array_entry->value = v;
 }
+int SparseArray::getValue(int r, int c){
+    Array_row *array_row = FindRowBefore(r);
+    if( (array_row->next_row ==nullptr) || (array_row->next_row->rowNum > r)){
+        return DEFAULT_VALUE;
+    }
+    array_row =  array_row->next_row;
+    
+    Array_entry *array_entry = FindColBefore(c,array_row->sentinel);
+    if((array_entry->next_entry==nullptr) || (array_entry->next_entry->colNum > c)){
+        return DEFAULT_VALUE;
+    }
 
+    return array_entry->next_entry->value;
+}
 Array_row * SparseArray::FindRowBefore(int r){
     Array_row *r_iter = this->top;
     while((r_iter->next_row!=nullptr) &&
