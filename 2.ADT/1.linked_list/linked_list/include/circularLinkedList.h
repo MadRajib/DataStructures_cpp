@@ -23,7 +23,9 @@ class CircularLlist{
         void destroyList();
         void copyList(CircularLlist );
         void isort();
-        Cell *begin();
+        Cell *begin(){
+            return this->top;
+        }
         void print();
 };
 

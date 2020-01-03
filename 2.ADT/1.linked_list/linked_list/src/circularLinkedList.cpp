@@ -48,7 +48,13 @@ void CircularLlist::insertAfter(int target,int v){
 }
 
 void CircularLlist::insertSorted(int v){
-
+    Cell *new_node = new Cell(v);
+    Cell *iter = this->top;
+    while((iter->next!=this->top) && (iter->next->value < v)){
+        iter = iter->next;
+    }
+    new_node->next = iter->next;
+    iter->next = new_node;
 }
 
 void CircularLlist::deleteCell(int target){
@@ -63,4 +69,37 @@ void CircularLlist::deleteCell(int target){
         }
         iter = iter->next;
     }
+}
+void CircularLlist::destroyList(){
+    Cell *iter = this->top;
+    while(iter->next!=this->top){
+        Cell *tmp = iter->next;
+        iter->next = tmp->next;
+        delete tmp;
+    }
+}
+void CircularLlist::copyList(CircularLlist cll){
+    destroyList();
+    Cell *last_added = this->top;
+    Cell *old_sentinel = cll.begin();
+    Cell *old_cell = old_sentinel->next;
+
+    while(old_cell!=old_sentinel){
+        last_added->next = new Cell(old_cell->value);
+        last_added = last_added->next;
+        old_cell = old_cell->next;
+    }
+    last_added->next= this->top;
+}
+void  CircularLlist::isort(){
+    CircularLlist cll =CircularLlist();
+    Cell *iter = this->top;
+    while(iter->next!=this->top){
+        cll.insertSorted(iter->next->value);
+         iter = iter->next;
+    }
+    copyList(cll);
+    cll.destroyList();
+    delete cll.begin();
+
 }

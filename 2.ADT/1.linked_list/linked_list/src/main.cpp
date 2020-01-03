@@ -131,11 +131,22 @@ int main(int argc, char const *argv[]){
    cll.print();
    cll.insertAfter(12,14);
    cll.print();
+   cll.isort();
+   cll.print();
    cll.deleteCell(12);
    cll.print();
    cll.deleteCell(10);
    cll.print();
    cll.deleteCell(14);
+   cll.print();
+   
+   cll.destroyList();
+   cll.print();
+   cll.insertSorted(10);
+   cll.print();
+   cll.insertSorted(1);
+   cll.print();
+   cll.insertSorted(5);
    cll.print();
 
     return 0;
