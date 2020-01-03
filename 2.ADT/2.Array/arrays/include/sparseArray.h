@@ -21,6 +21,7 @@ class SparseArray{
         SparseArray();
         void setValue(int r,int c,int v);
         int getValue(int r,int c);
+        void deleteValue(int r,int c);
         Array_row * FindRowBefore(int r);
         Array_entry * FindColBefore(int c,Array_entry *sentinel);
         void print();

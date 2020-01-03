@@ -79,5 +79,12 @@ int main(int argc, char const *argv[]){
    cout<< sArray.getValue(1,0) <<endl;
    cout<< sArray.getValue(100,100) <<endl;
    cout<< sArray.getValue(0,10) <<endl;
+
+   sArray.deleteValue(70,100);
+   sArray.print();
+   sArray.deleteValue(1,0);
+   sArray.print();
+   sArray.deleteValue(100,100);
+   sArray.print();
    return 0;
 }

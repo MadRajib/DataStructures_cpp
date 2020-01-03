@@ -62,14 +62,37 @@ int SparseArray::getValue(int r, int c){
     if( (array_row->next_row ==nullptr) || (array_row->next_row->rowNum > r)){
         return DEFAULT_VALUE;
     }
-    array_row =  array_row->next_row;
+    Array_row *target_row =  array_row->next_row;
     
-    Array_entry *array_entry = FindColBefore(c,array_row->sentinel);
+    Array_entry *array_entry = FindColBefore(c,target_row->sentinel);
     if((array_entry->next_entry==nullptr) || (array_entry->next_entry->colNum > c)){
         return DEFAULT_VALUE;
     }
 
     return array_entry->next_entry->value;
+}
+
+void SparseArray::deleteValue(int r,int c){
+    Array_row *array_row = FindRowBefore(r);
+    if( (array_row->next_row ==nullptr) || (array_row->next_row->rowNum > r)){
+        return;
+    }
+    Array_row *target_row =  array_row->next_row;
+    
+    Array_entry *array_entry = FindColBefore(c,target_row->sentinel);
+    if((array_entry->next_entry==nullptr) || (array_entry->next_entry->colNum > c)){
+        return;
+    }
+
+    Array_entry *target_entry = array_entry->next_entry;
+    array_entry->next_entry = target_entry->next_entry;
+    delete target_entry;
+
+    if(target_row->sentinel->next_entry!=nullptr) return;
+
+    array_row->next_row = target_row->next_row;
+    delete target_row;
+
 }
 Array_row * SparseArray::FindRowBefore(int r){
     Array_row *r_iter = this->top;
