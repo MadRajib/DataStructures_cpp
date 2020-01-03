@@ -57,9 +57,22 @@ include CMakeFiles/linkList.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/linkList.dir/flags.make
 
+CMakeFiles/linkList.dir/src/circularLinkedList.cpp.o: CMakeFiles/linkList.dir/flags.make
+CMakeFiles/linkList.dir/src/circularLinkedList.cpp.o: ../src/circularLinkedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/linkList.dir/src/circularLinkedList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linkList.dir/src/circularLinkedList.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/circularLinkedList.cpp
+
+CMakeFiles/linkList.dir/src/circularLinkedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linkList.dir/src/circularLinkedList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/circularLinkedList.cpp > CMakeFiles/linkList.dir/src/circularLinkedList.cpp.i
+
+CMakeFiles/linkList.dir/src/circularLinkedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linkList.dir/src/circularLinkedList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/circularLinkedList.cpp -o CMakeFiles/linkList.dir/src/circularLinkedList.cpp.s
+
 CMakeFiles/linkList.dir/src/linked_list.cpp.o: CMakeFiles/linkList.dir/flags.make
 CMakeFiles/linkList.dir/src/linked_list.cpp.o: ../src/linked_list.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/linkList.dir/src/linked_list.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linkList.dir/src/linked_list.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linkList.dir/src/linked_list.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/linked_list.cpp
 
 CMakeFiles/linkList.dir/src/linked_list.cpp.i: cmake_force
@@ -72,7 +85,7 @@ CMakeFiles/linkList.dir/src/linked_list.cpp.s: cmake_force
 
 CMakeFiles/linkList.dir/src/main.cpp.o: CMakeFiles/linkList.dir/flags.make
 CMakeFiles/linkList.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linkList.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/linkList.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linkList.dir/src/main.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/main.cpp
 
 CMakeFiles/linkList.dir/src/main.cpp.i: cmake_force
@@ -85,17 +98,19 @@ CMakeFiles/linkList.dir/src/main.cpp.s: cmake_force
 
 # Object files for target linkList
 linkList_OBJECTS = \
+"CMakeFiles/linkList.dir/src/circularLinkedList.cpp.o" \
 "CMakeFiles/linkList.dir/src/linked_list.cpp.o" \
 "CMakeFiles/linkList.dir/src/main.cpp.o"
 
 # External object files for target linkList
 linkList_EXTERNAL_OBJECTS =
 
+linkList: CMakeFiles/linkList.dir/src/circularLinkedList.cpp.o
 linkList: CMakeFiles/linkList.dir/src/linked_list.cpp.o
 linkList: CMakeFiles/linkList.dir/src/main.cpp.o
 linkList: CMakeFiles/linkList.dir/build.make
 linkList: CMakeFiles/linkList.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable linkList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable linkList"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linkList.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

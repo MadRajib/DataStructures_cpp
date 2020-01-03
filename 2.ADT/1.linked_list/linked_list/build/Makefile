@@ -123,6 +123,33 @@ linkList/fast:
 	$(MAKE) -f CMakeFiles/linkList.dir/build.make CMakeFiles/linkList.dir/build
 .PHONY : linkList/fast
 
+src/circularLinkedList.o: src/circularLinkedList.cpp.o
+
+.PHONY : src/circularLinkedList.o
+
+# target to build an object file
+src/circularLinkedList.cpp.o:
+	$(MAKE) -f CMakeFiles/linkList.dir/build.make CMakeFiles/linkList.dir/src/circularLinkedList.cpp.o
+.PHONY : src/circularLinkedList.cpp.o
+
+src/circularLinkedList.i: src/circularLinkedList.cpp.i
+
+.PHONY : src/circularLinkedList.i
+
+# target to preprocess a source file
+src/circularLinkedList.cpp.i:
+	$(MAKE) -f CMakeFiles/linkList.dir/build.make CMakeFiles/linkList.dir/src/circularLinkedList.cpp.i
+.PHONY : src/circularLinkedList.cpp.i
+
+src/circularLinkedList.s: src/circularLinkedList.cpp.s
+
+.PHONY : src/circularLinkedList.s
+
+# target to generate assembly for a file
+src/circularLinkedList.cpp.s:
+	$(MAKE) -f CMakeFiles/linkList.dir/build.make CMakeFiles/linkList.dir/src/circularLinkedList.cpp.s
+.PHONY : src/circularLinkedList.cpp.s
+
 src/linked_list.o: src/linked_list.cpp.o
 
 .PHONY : src/linked_list.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... linkList"
+	@echo "... src/circularLinkedList.o"
+	@echo "... src/circularLinkedList.i"
+	@echo "... src/circularLinkedList.s"
 	@echo "... src/linked_list.o"
 	@echo "... src/linked_list.i"
 	@echo "... src/linked_list.s"

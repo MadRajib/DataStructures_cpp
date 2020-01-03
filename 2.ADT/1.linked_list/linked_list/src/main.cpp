@@ -2,29 +2,33 @@
 #include <string>
 #include <vector>
 #include "linked_list.h"
+#include "circularLinkedList.h"
 
 using std::cout;
 using std::cin;
 using std::cerr;
 using std::endl;
-void print(Cell *i){
-    while(i->next!= nullptr){
-        cout<<i->next->value<<" ";
-        i = i->next;
-    }
-    cout <<endl;
-}
+// void print(Cell *i){
+//     while(i->next!= nullptr){
+//         cout<<i->next->value<<" ";
+//         i = i->next;
+//     }
+//     cout <<endl;
+// }
 
-void print(DCell *i,const DCell *end){
-    while(i->next!= end){
-        cout<<i->next->value<<" ";
-        i = i->next;
-    }
-    cout <<endl;
-}
+// void print(DCell *i,const DCell *end){
+//     while(i->next!= end){
+//         cout<<i->next->value<<" ";
+//         i = i->next;
+//     }
+//     cout <<endl;
+// }
 
 int main(int argc, char const *argv[]){
+    
+    /* singly and doubly linked list */
 
+    /*
     Llist l = new Llist();
     auto beg = l.begin();
 
@@ -113,6 +117,26 @@ int main(int argc, char const *argv[]){
     beg = l2.begin();
     print(beg);
     
+    */
+
+   CircularLlist cll = CircularLlist();
+   cll.print();
+   cll.addAtBegining(1);
+   cll.print();
+   cll.addAtBegining(10);
+   cll.print();
+   cll.addAtEnd(12);
+   cll.print();
+   cll.insertAfter(10,13);
+   cll.print();
+   cll.insertAfter(12,14);
+   cll.print();
+   cll.deleteCell(12);
+   cll.print();
+   cll.deleteCell(10);
+   cll.print();
+   cll.deleteCell(14);
+   cll.print();
 
     return 0;
 }
