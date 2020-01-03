@@ -5,5 +5,17 @@ CMakeFiles/array.dir/src/arrays.cpp.o: ../include/arrays.h
 CMakeFiles/array.dir/src/arrays.cpp.o: ../src/arrays.cpp
 
 CMakeFiles/array.dir/src/main.cpp.o: ../include/arrays.h
+CMakeFiles/array.dir/src/main.cpp.o: ../include/multiD.h
+CMakeFiles/array.dir/src/main.cpp.o: ../include/sparseArray.h
+CMakeFiles/array.dir/src/main.cpp.o: ../include/triangularArray.h
 CMakeFiles/array.dir/src/main.cpp.o: ../src/main.cpp
+
+CMakeFiles/array.dir/src/multiD.cpp.o: ../include/multiD.h
+CMakeFiles/array.dir/src/multiD.cpp.o: ../src/multiD.cpp
+
+CMakeFiles/array.dir/src/sparseArray.cpp.o: ../include/sparseArray.h
+CMakeFiles/array.dir/src/sparseArray.cpp.o: ../src/sparseArray.cpp
+
+CMakeFiles/array.dir/src/traingularArray.cpp.o: ../include/triangularArray.h
+CMakeFiles/array.dir/src/traingularArray.cpp.o: ../src/traingularArray.cpp
 

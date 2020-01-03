@@ -6,6 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/arrays.cpp" "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles/array.dir/src/arrays.cpp.o"
   "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/main.cpp" "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles/array.dir/src/main.cpp.o"
+  "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/multiD.cpp" "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles/array.dir/src/multiD.cpp.o"
+  "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/sparseArray.cpp" "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles/array.dir/src/sparseArray.cpp.o"
+  "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/traingularArray.cpp" "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles/array.dir/src/traingularArray.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

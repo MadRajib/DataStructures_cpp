@@ -14,6 +14,16 @@ algorithm
 iostream
 -
 
+../include/multiD.h
+iostream
+-
+
+../include/sparseArray.h
+iostream
+-
+
+../include/triangularArray.h
+
 /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/main.cpp
 iostream
 -
@@ -21,6 +31,14 @@ string
 -
 vector
 -
+cstring
+-
 arrays.h
 /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/arrays.h
+multiD.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/multiD.h
+triangularArray.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/triangularArray.h
+sparseArray.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/sparseArray.h
 

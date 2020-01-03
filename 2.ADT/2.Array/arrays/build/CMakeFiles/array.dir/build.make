@@ -83,19 +83,64 @@ CMakeFiles/array.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/main.cpp -o CMakeFiles/array.dir/src/main.cpp.s
 
+CMakeFiles/array.dir/src/multiD.cpp.o: CMakeFiles/array.dir/flags.make
+CMakeFiles/array.dir/src/multiD.cpp.o: ../src/multiD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/array.dir/src/multiD.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/src/multiD.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/multiD.cpp
+
+CMakeFiles/array.dir/src/multiD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array.dir/src/multiD.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/multiD.cpp > CMakeFiles/array.dir/src/multiD.cpp.i
+
+CMakeFiles/array.dir/src/multiD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array.dir/src/multiD.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/multiD.cpp -o CMakeFiles/array.dir/src/multiD.cpp.s
+
+CMakeFiles/array.dir/src/sparseArray.cpp.o: CMakeFiles/array.dir/flags.make
+CMakeFiles/array.dir/src/sparseArray.cpp.o: ../src/sparseArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/array.dir/src/sparseArray.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/src/sparseArray.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/sparseArray.cpp
+
+CMakeFiles/array.dir/src/sparseArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array.dir/src/sparseArray.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/sparseArray.cpp > CMakeFiles/array.dir/src/sparseArray.cpp.i
+
+CMakeFiles/array.dir/src/sparseArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array.dir/src/sparseArray.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/sparseArray.cpp -o CMakeFiles/array.dir/src/sparseArray.cpp.s
+
+CMakeFiles/array.dir/src/traingularArray.cpp.o: CMakeFiles/array.dir/flags.make
+CMakeFiles/array.dir/src/traingularArray.cpp.o: ../src/traingularArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/array.dir/src/traingularArray.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array.dir/src/traingularArray.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/traingularArray.cpp
+
+CMakeFiles/array.dir/src/traingularArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array.dir/src/traingularArray.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/traingularArray.cpp > CMakeFiles/array.dir/src/traingularArray.cpp.i
+
+CMakeFiles/array.dir/src/traingularArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array.dir/src/traingularArray.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/traingularArray.cpp -o CMakeFiles/array.dir/src/traingularArray.cpp.s
+
 # Object files for target array
 array_OBJECTS = \
 "CMakeFiles/array.dir/src/arrays.cpp.o" \
-"CMakeFiles/array.dir/src/main.cpp.o"
+"CMakeFiles/array.dir/src/main.cpp.o" \
+"CMakeFiles/array.dir/src/multiD.cpp.o" \
+"CMakeFiles/array.dir/src/sparseArray.cpp.o" \
+"CMakeFiles/array.dir/src/traingularArray.cpp.o"
 
 # External object files for target array
 array_EXTERNAL_OBJECTS =
 
 array: CMakeFiles/array.dir/src/arrays.cpp.o
 array: CMakeFiles/array.dir/src/main.cpp.o
+array: CMakeFiles/array.dir/src/multiD.cpp.o
+array: CMakeFiles/array.dir/src/sparseArray.cpp.o
+array: CMakeFiles/array.dir/src/traingularArray.cpp.o
 array: CMakeFiles/array.dir/build.make
 array: CMakeFiles/array.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable array"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable array"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/array.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

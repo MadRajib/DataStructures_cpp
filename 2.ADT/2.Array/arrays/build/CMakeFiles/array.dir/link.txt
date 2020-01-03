@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/array.dir/src/arrays.cpp.o CMakeFiles/array.dir/src/main.cpp.o  -o array 
+/usr/bin/c++  -g  -rdynamic CMakeFiles/array.dir/src/arrays.cpp.o CMakeFiles/array.dir/src/main.cpp.o CMakeFiles/array.dir/src/multiD.cpp.o CMakeFiles/array.dir/src/sparseArray.cpp.o CMakeFiles/array.dir/src/traingularArray.cpp.o  -o array 

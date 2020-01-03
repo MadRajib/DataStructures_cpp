@@ -6,4 +6,16 @@ CMakeFiles/array.dir/src/arrays.cpp.o
  /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/arrays.cpp
 CMakeFiles/array.dir/src/main.cpp.o
  ../include/arrays.h
+ ../include/multiD.h
+ ../include/sparseArray.h
+ ../include/triangularArray.h
  /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/main.cpp
+CMakeFiles/array.dir/src/multiD.cpp.o
+ ../include/multiD.h
+ /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/multiD.cpp
+CMakeFiles/array.dir/src/sparseArray.cpp.o
+ ../include/sparseArray.h
+ /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/sparseArray.cpp
+CMakeFiles/array.dir/src/traingularArray.cpp.o
+ ../include/triangularArray.h
+ /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/2.Array/arrays/src/traingularArray.cpp

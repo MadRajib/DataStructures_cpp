@@ -177,6 +177,87 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/multiD.o: src/multiD.cpp.o
+
+.PHONY : src/multiD.o
+
+# target to build an object file
+src/multiD.cpp.o:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/multiD.cpp.o
+.PHONY : src/multiD.cpp.o
+
+src/multiD.i: src/multiD.cpp.i
+
+.PHONY : src/multiD.i
+
+# target to preprocess a source file
+src/multiD.cpp.i:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/multiD.cpp.i
+.PHONY : src/multiD.cpp.i
+
+src/multiD.s: src/multiD.cpp.s
+
+.PHONY : src/multiD.s
+
+# target to generate assembly for a file
+src/multiD.cpp.s:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/multiD.cpp.s
+.PHONY : src/multiD.cpp.s
+
+src/sparseArray.o: src/sparseArray.cpp.o
+
+.PHONY : src/sparseArray.o
+
+# target to build an object file
+src/sparseArray.cpp.o:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/sparseArray.cpp.o
+.PHONY : src/sparseArray.cpp.o
+
+src/sparseArray.i: src/sparseArray.cpp.i
+
+.PHONY : src/sparseArray.i
+
+# target to preprocess a source file
+src/sparseArray.cpp.i:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/sparseArray.cpp.i
+.PHONY : src/sparseArray.cpp.i
+
+src/sparseArray.s: src/sparseArray.cpp.s
+
+.PHONY : src/sparseArray.s
+
+# target to generate assembly for a file
+src/sparseArray.cpp.s:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/sparseArray.cpp.s
+.PHONY : src/sparseArray.cpp.s
+
+src/traingularArray.o: src/traingularArray.cpp.o
+
+.PHONY : src/traingularArray.o
+
+# target to build an object file
+src/traingularArray.cpp.o:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/traingularArray.cpp.o
+.PHONY : src/traingularArray.cpp.o
+
+src/traingularArray.i: src/traingularArray.cpp.i
+
+.PHONY : src/traingularArray.i
+
+# target to preprocess a source file
+src/traingularArray.cpp.i:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/traingularArray.cpp.i
+.PHONY : src/traingularArray.cpp.i
+
+src/traingularArray.s: src/traingularArray.cpp.s
+
+.PHONY : src/traingularArray.s
+
+# target to generate assembly for a file
+src/traingularArray.cpp.s:
+	$(MAKE) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/src/traingularArray.cpp.s
+.PHONY : src/traingularArray.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +273,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/multiD.o"
+	@echo "... src/multiD.i"
+	@echo "... src/multiD.s"
+	@echo "... src/sparseArray.o"
+	@echo "... src/sparseArray.i"
+	@echo "... src/sparseArray.s"
+	@echo "... src/traingularArray.o"
+	@echo "... src/traingularArray.i"
+	@echo "... src/traingularArray.s"
 .PHONY : help
 
 
