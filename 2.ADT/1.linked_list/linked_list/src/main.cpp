@@ -3,6 +3,7 @@
 #include <vector>
 #include "linked_list.h"
 #include "circularLinkedList.h"
+#include "xorLinkedList.h"
 
 using std::cout;
 using std::cin;
@@ -118,36 +119,48 @@ int main(int argc, char const *argv[]){
     print(beg);
     
     */
-
-   CircularLlist cll = CircularLlist();
-   cll.print();
-   cll.addAtBegining(1);
-   cll.print();
-   cll.addAtBegining(10);
-   cll.print();
-   cll.addAtEnd(12);
-   cll.print();
-   cll.insertAfter(10,13);
-   cll.print();
-   cll.insertAfter(12,14);
-   cll.print();
-   cll.isort();
-   cll.print();
-   cll.deleteCell(12);
-   cll.print();
-   cll.deleteCell(10);
-   cll.print();
-   cll.deleteCell(14);
-   cll.print();
-   
-   cll.destroyList();
-   cll.print();
-   cll.insertSorted(10);
-   cll.print();
-   cll.insertSorted(1);
-   cll.print();
-   cll.insertSorted(5);
-   cll.print();
-
+   // CircularLinked List
+   /*
+    CircularLlist cll = CircularLlist();
+    cll.print();
+    cll.addAtBegining(1);
+    cll.print();
+    cll.addAtBegining(10);
+    cll.print();
+    cll.addAtEnd(12);
+    cll.print();
+    cll.insertAfter(10,13);
+    cll.print();
+    cll.insertAfter(12,14);
+    cll.print();
+    cll.isort();
+    cll.print();
+    cll.deleteCell(12);
+    cll.print();
+    cll.deleteCell(10);
+    cll.print();
+    cll.deleteCell(14);
+    cll.print();
+    
+    cll.destroyList();
+    cll.print();
+    cll.insertSorted(10);
+    cll.print();
+    cll.insertSorted(1);
+    cll.print();
+    cll.insertSorted(5);
+    cll.print();
+    */
+   //Using xor linked list
+    XorLlist xll = XorLlist();
+    xll.print();
+    xll.addAtBegining(12);
+    xll.addAtBegining(13);
+    xll.addAtBegining(14);
+    xll.addAtBegining(15);
+    xll.print();
+    // xll.addAtBegining(11);
+    // xll.print();
+    // xll.rprint();
     return 0;
 }

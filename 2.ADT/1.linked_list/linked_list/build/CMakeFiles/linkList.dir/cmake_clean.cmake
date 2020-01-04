@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/linkList.dir/src/circularLinkedList.cpp.o"
   "CMakeFiles/linkList.dir/src/linked_list.cpp.o"
   "CMakeFiles/linkList.dir/src/main.cpp.o"
+  "CMakeFiles/linkList.dir/src/xorLinkedList.cpp.o"
   "linkList"
   "linkList.pdb"
 )

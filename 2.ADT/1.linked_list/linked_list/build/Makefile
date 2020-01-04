@@ -204,6 +204,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/linkList.dir/build.make CMakeFiles/linkList.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/xorLinkedList.o: src/xorLinkedList.cpp.o
+
+.PHONY : src/xorLinkedList.o
+
+# target to build an object file
+src/xorLinkedList.cpp.o:
+	$(MAKE) -f CMakeFiles/linkList.dir/build.make CMakeFiles/linkList.dir/src/xorLinkedList.cpp.o
+.PHONY : src/xorLinkedList.cpp.o
+
+src/xorLinkedList.i: src/xorLinkedList.cpp.i
+
+.PHONY : src/xorLinkedList.i
+
+# target to preprocess a source file
+src/xorLinkedList.cpp.i:
+	$(MAKE) -f CMakeFiles/linkList.dir/build.make CMakeFiles/linkList.dir/src/xorLinkedList.cpp.i
+.PHONY : src/xorLinkedList.cpp.i
+
+src/xorLinkedList.s: src/xorLinkedList.cpp.s
+
+.PHONY : src/xorLinkedList.s
+
+# target to generate assembly for a file
+src/xorLinkedList.cpp.s:
+	$(MAKE) -f CMakeFiles/linkList.dir/build.make CMakeFiles/linkList.dir/src/xorLinkedList.cpp.s
+.PHONY : src/xorLinkedList.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/xorLinkedList.o"
+	@echo "... src/xorLinkedList.i"
+	@echo "... src/xorLinkedList.s"
 .PHONY : help
 
 

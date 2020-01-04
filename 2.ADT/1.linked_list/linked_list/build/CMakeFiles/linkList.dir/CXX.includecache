@@ -6,21 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../include/circularLinkedList.h
-
-../include/linked_list.h
+../include/xorLinkedList.h
+cstdint
+-
 iostream
 -
 
-/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/main.cpp
-iostream
--
-string
--
-vector
--
-linked_list.h
-/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/linked_list.h
-circularLinkedList.h
-/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/circularLinkedList.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/xorLinkedList.cpp
+xorLinkedList.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/xorLinkedList.h
 

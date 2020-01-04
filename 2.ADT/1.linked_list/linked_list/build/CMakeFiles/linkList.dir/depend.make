@@ -9,5 +9,9 @@ CMakeFiles/linkList.dir/src/linked_list.cpp.o: ../src/linked_list.cpp
 
 CMakeFiles/linkList.dir/src/main.cpp.o: ../include/circularLinkedList.h
 CMakeFiles/linkList.dir/src/main.cpp.o: ../include/linked_list.h
+CMakeFiles/linkList.dir/src/main.cpp.o: ../include/xorLinkedList.h
 CMakeFiles/linkList.dir/src/main.cpp.o: ../src/main.cpp
+
+CMakeFiles/linkList.dir/src/xorLinkedList.cpp.o: ../include/xorLinkedList.h
+CMakeFiles/linkList.dir/src/xorLinkedList.cpp.o: ../src/xorLinkedList.cpp
 

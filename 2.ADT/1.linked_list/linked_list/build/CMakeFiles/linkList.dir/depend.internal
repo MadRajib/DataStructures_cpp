@@ -10,4 +10,8 @@ CMakeFiles/linkList.dir/src/linked_list.cpp.o
 CMakeFiles/linkList.dir/src/main.cpp.o
  ../include/circularLinkedList.h
  ../include/linked_list.h
+ ../include/xorLinkedList.h
  /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/main.cpp
+CMakeFiles/linkList.dir/src/xorLinkedList.cpp.o
+ ../include/xorLinkedList.h
+ /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/1.linked_list/linked_list/src/xorLinkedList.cpp
