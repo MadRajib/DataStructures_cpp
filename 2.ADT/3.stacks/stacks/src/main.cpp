@@ -13,8 +13,14 @@ int main(int argc, char const *argv[]){
     LStack<int> sl = LStack<int>();
     sl.push(2);
     sl.push(10);
-    cout<<sl.pop();
-    cout<<sl.pop();
+    cout<< sl.size() <<endl;
+    cout<< sl.stackTop() <<endl;
+    cout<< sl.isEmpty() <<endl;
+    
+    cout<<sl.pop()<<endl;
+    cout<<sl.pop()<<endl;
+
+    cout<< sl.isEmpty() <<endl;
 
     return 0;
 }
