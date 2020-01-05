@@ -10,13 +10,28 @@ using std::endl;
 
 int main(int argc, char const *argv[]){
     
-    LStack<int> sl = LStack<int>();
+    /*For stack using linked List */
+    // LStack<int> sl = LStack<int>();
+    // sl.push(2);
+    // sl.push(10);
+    // cout<< sl.size() <<endl;
+    // cout<< sl.stackTop() <<endl;
+    // cout<< sl.isEmpty() <<endl;
+    
+    // cout<<sl.pop()<<endl;
+    // cout<<sl.pop()<<endl;
+
+    // cout<< sl.isEmpty() <<endl;
+
+    /*For stack using array */
+    AStack<int> sl = AStack<int>(2);
     sl.push(2);
     sl.push(10);
     cout<< sl.size() <<endl;
     cout<< sl.stackTop() <<endl;
     cout<< sl.isEmpty() <<endl;
     
+    cout<<sl.pop()<<endl;
     cout<<sl.pop()<<endl;
     cout<<sl.pop()<<endl;
 

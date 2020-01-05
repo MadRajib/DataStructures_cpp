@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 ../include/stack.h
+iostream
+-
 
 /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/3.stacks/stacks/src/main.cpp
 iostream
