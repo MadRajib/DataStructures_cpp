@@ -8,7 +8,7 @@ int * insertAt(int **arr,size_t &size,int val,size_t pos){
     std::copy((*arr), (*arr) + size, newArr);
    
    
-    delete[] (*arr);
+    // delete[] (*arr);
     (*arr) = newArr;
    
 
@@ -16,6 +16,24 @@ int * insertAt(int **arr,size_t &size,int val,size_t pos){
         (*arr)[i] = (*arr)[i-1];
     }
     (*arr)[pos] = val;
+}
+
+void insertAt(int *arr,size_t &size,int val,size_t pos){
+
+    size++;
+    int* newArr = new int[size];
+    std::cout<<size<<std::endl;
+    std::copy(arr, arr + size, newArr);
+   
+   
+    delete[] arr;
+    arr = newArr;
+   
+
+    for (size_t i = size -1; i > pos; --i){
+        arr[i] = arr[i-1];
+    }
+    arr[pos] = val;
 }
 
 int NZBA_value(int r, int c, int L_bs[],int (&arr)[3][4]){

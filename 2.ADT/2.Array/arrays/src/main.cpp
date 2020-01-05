@@ -19,34 +19,37 @@ size_t get_size(int (&arr)[n]){
 
 int main(int argc, char const *argv[]){
 
-    /* for arrays
-    int *arr = new int[5]{1,2,3,4,5};
-    size_t size = 5;
-    insertAt(&arr,size,2,4);
+    //for arrays
+    // int *arr = new int[5]{1,2,3,4,5};
+    // size_t size = 5;
+    // insertAt(arr,size,2,4);
 
-    for (size_t i = 0; i < size; i++){
-        std::cout<< arr[i]<<" ";
-    }
-    cout<<endl;
+    // for (size_t i = 0; i < size; i++){
+    //     std::cout<< arr[i]<<" ";
+    // }
+    // cout<<endl;
+    int a = 10;
+    int *b = &a;
+    *b = 12;
 
-    int arr2[][4]= {{1,2,3,4},
-                     {5,6,7,8},
-                     {9,10,11,12}};
+    // int arr2[][4]= {{1,2,3,4},
+    //                  {5,6,7,8},
+    //                  {9,10,11,12}};
 
-    int l_bds[] = {2,4};
+    // int l_bds[] = {2,4};
     
-    int res = NZBA_value(2,5,l_bds,arr2);
-    cout<< res <<endl;
+    // int res = NZBA_value(2,5,l_bds,arr2);
+    // cout<< res <<endl;
 
-    // Get total size for 1d array
+    // // Get total size for 1d array
 
-    int lw_bds[]{10,2000,400};
-    int up_bds[]{20,2010,500};
+    // int lw_bds[]{10,2000,400};
+    // int up_bds[]{20,2010,500};
 
-    int ar_size = arraySize(lw_bds,up_bds,get_size(lw_bds));
-    cout<< ar_size <<endl;
+    // int ar_size = arraySize(lw_bds,up_bds,get_size(lw_bds));
+    // cout<< ar_size <<endl;
 
-    */
+    
 
 
     /* For multiD */
@@ -65,26 +68,26 @@ int main(int argc, char const *argv[]){
    */
 
    /* Sparse Array */
-   SparseArray sArray = SparseArray();
+//    SparseArray sArray = SparseArray();
    
-   sArray.print();
+//    sArray.print();
    
-   sArray.setValue(1,0,1);
-   sArray.setValue(1,1,2);
-   sArray.setValue(5,0,3);
-   sArray.setValue(100,100,19);
-   sArray.setValue(70,100,29);
-   sArray.setValue(70,100,39);
-   sArray.print();
-   cout<< sArray.getValue(1,0) <<endl;
-   cout<< sArray.getValue(100,100) <<endl;
-   cout<< sArray.getValue(0,10) <<endl;
+//    sArray.setValue(1,0,1);
+//    sArray.setValue(1,1,2);
+//    sArray.setValue(5,0,3);
+//    sArray.setValue(100,100,19);
+//    sArray.setValue(70,100,29);
+//    sArray.setValue(70,100,39);
+//    sArray.print();
+//    cout<< sArray.getValue(1,0) <<endl;
+//    cout<< sArray.getValue(100,100) <<endl;
+//    cout<< sArray.getValue(0,10) <<endl;
 
-   sArray.deleteValue(70,100);
-   sArray.print();
-   sArray.deleteValue(1,0);
-   sArray.print();
-   sArray.deleteValue(100,100);
-   sArray.print();
+//    sArray.deleteValue(70,100);
+//    sArray.print();
+//    sArray.deleteValue(1,0);
+//    sArray.print();
+//    sArray.deleteValue(100,100);
+//    sArray.print();
    return 0;
 }
