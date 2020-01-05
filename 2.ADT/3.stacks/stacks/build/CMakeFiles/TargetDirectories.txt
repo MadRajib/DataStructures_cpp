@@ -1,0 +1,3 @@
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/3.stacks/stacks/build/CMakeFiles/rebuild_cache.dir
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/3.stacks/stacks/build/CMakeFiles/edit_cache.dir
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/3.stacks/stacks/build/CMakeFiles/stack.dir

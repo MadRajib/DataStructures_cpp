@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/stack.h
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/3.stacks/stacks/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
+stack.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/3.stacks/stacks/src/stack.h
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/3.stacks/stacks/src/stack.cpp
+stack.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/3.stacks/stacks/src/stack.h
+string.h
+-
+
