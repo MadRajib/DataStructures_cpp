@@ -76,10 +76,10 @@ int main(int argc, char const *argv[]){
     sl.push(0,14);
     sl.push(0,16);
     sl.push(0,17);
-    sl.push(0,18);
-    sl.push(0,19);
-    sl.push(0,20);
-    sl.push(0,21);
+    // sl.push(0,18);
+    // sl.push(0,19);
+    // sl.push(0,20);
+    // sl.push(0,21);
 
 
     cout<< sl.isEmpty(0) <<endl;
