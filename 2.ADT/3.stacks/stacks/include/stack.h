@@ -44,5 +44,23 @@ public:
     bool isEmpty();
 };
 
+template <class T>
+class DAStack{
+private:
+    int count;
+    size_t MAX_SIZE;
+    size_t top;
+    T *bucket;
+    void doubleStack();
+public:
+    DAStack();
+    ~DAStack();
+    void push(T v);
+    T pop();
+    T stackTop();
+    T size();
+    bool isEmpty();
+};
+
 
 #endif

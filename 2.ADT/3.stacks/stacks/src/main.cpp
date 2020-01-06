@@ -23,8 +23,22 @@ int main(int argc, char const *argv[]){
 
     // cout<< sl.isEmpty() <<endl;
 
-    /*For stack using array */
-    AStack<int> sl = AStack<int>(2);
+    // /*For stack using array */
+    // AStack<int> sl = AStack<int>(2);
+    // sl.push(2);
+    // sl.push(10);
+    // cout<< sl.size() <<endl;
+    // cout<< sl.stackTop() <<endl;
+    // cout<< sl.isEmpty() <<endl;
+    
+    // cout<<sl.pop()<<endl;
+    // cout<<sl.pop()<<endl;
+    // cout<<sl.pop()<<endl;
+
+    // cout<< sl.isEmpty() <<endl;
+
+    /*For stack using dynamic array */
+    DAStack<int> sl = DAStack<int>();
     sl.push(2);
     sl.push(10);
     cout<< sl.size() <<endl;
