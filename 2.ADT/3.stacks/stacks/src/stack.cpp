@@ -5,15 +5,14 @@
 
 class StackOverFlow: public std::exception{
     private:
+        std::string desc = "stack_over_flow:stack is full!";
         std::string msg;
-        std::string desc ="stack_over_flow:stack is full!";
     public:
         StackOverFlow(std::string s):msg(s+std::string(" :") +desc ){}
         virtual const char* what() const throw(){
             return  msg.c_str();
         }
 };
-
 class StackUnderFlow: public std::exception{
     private:
         std::string desc = "stack_under_flow:stack is empty!";
@@ -210,4 +209,106 @@ T DAStack<T>::size(){
 template <class T>
 bool DAStack<T>::isEmpty(){
     return 0 == this->count ;
+}
+
+
+
+// For Double stacks using arrays
+template class DoubleStack<int>;
+template class DoubleStack<float>;
+template class DoubleStack<char>;
+
+template <class T>
+DoubleStack<T>::DoubleStack(size_t sz){
+    this->MAX_SIZE = sz;
+    
+    this->count_1 = 0;
+    this->count_2 = 0;
+    
+    this->top_1 = -1;
+    this->top_2 = this->MAX_SIZE;
+
+    this->bucket = new T[this->MAX_SIZE];
+}
+
+template <class T>
+DoubleStack<T>::~DoubleStack(){
+    this->count_1 = 0;
+    this->count_2 = 0;
+    this->top_1 = -1;
+    this->top_2 = this->MAX_SIZE;
+
+    delete[] this->bucket;
+}
+template <class T>
+void DoubleStack<T>::push(int stk,T v){
+
+    if(this->top_1 + 1 == this->top_2){
+        StackOverFlow StackFull("DoubleStack");
+        throw StackFull;
+    }
+
+    if(0 == stk){
+        this->bucket[++(this->top_1)] = v;
+        (this->count_1)++;
+    }else if( 1 == stk){
+        this->bucket[--(this->top_2)] = v;
+        (this->count_2)++;
+    }else{
+        throw std::invalid_argument("invalid stack para");
+    }
+    
+}
+
+template <class T>
+T DoubleStack<T>::pop(int stk){
+
+    if(0 == stk){
+        if(0 == this->count_1){
+            StackUnderFlow StackEmpty("DoubleStack");
+            throw StackEmpty;
+        }
+        (this->count_1)--;
+        return this->bucket[(this->top_1)--];
+    }else if(1 == stk){
+        if(0 == this->count_1){
+            StackUnderFlow StackEmpty("DoubleStack");
+            throw StackEmpty;
+        }
+        (this->count_2)--;
+        return this->bucket[(this->top_2)++];
+
+    }else{
+        throw std::invalid_argument("invalid stack para");
+    }
+    
+}   
+
+template <class T>
+T DoubleStack<T>::stackTop(int stk){
+
+    if(0 == stk && this->count_1 > 0){
+        return this->bucket[this->top_1];
+    }else if(1 == stk && this->count_2 > 0){
+        return this->bucket[this->top_2];
+    }else if(stk < 0 ||stk > 1){
+        throw std::invalid_argument("invalid stack para");
+    }
+    
+    StackUnderFlow StackEmpty("AStack");
+    throw StackEmpty;
+}
+
+template <class T>
+T DoubleStack<T>::size(int stk){
+    if(0 == stk) return this->count_1;
+    else if(1 == stk) return this->count_2;
+    throw std::invalid_argument("invalid stack para");
+}
+
+template <class T>
+bool DoubleStack<T>::isEmpty(int stk){
+    if(0 == stk) return 0 == this->count_1;
+    else if(1 == stk) return 0 == this->count_2;
+    throw std::invalid_argument("invalid stack para");
 }

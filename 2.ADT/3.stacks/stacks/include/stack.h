@@ -3,6 +3,8 @@
 #include <iostream>
 
 #define STACK_DEFAULT_VALUE -1
+
+// Stack class using linked list
 template <class T>
 class LStack{
 private:
@@ -27,6 +29,7 @@ public:
 };
 
 
+// Stack class using arrays
 template <class T>
 class AStack{
 private:
@@ -44,6 +47,7 @@ public:
     bool isEmpty();
 };
 
+// Stack using dynamic arrays
 template <class T>
 class DAStack{
 private:
@@ -62,5 +66,23 @@ public:
     bool isEmpty();
 };
 
+
+// Double stack using arrays
+template <class T>
+class DoubleStack{
+private:
+    int count_1, count_2;
+    size_t MAX_SIZE;
+    size_t top_1,top_2;
+    T *bucket;
+public:
+    DoubleStack(size_t sz);
+    ~DoubleStack();
+    void push(int stk,T v);
+    T pop(int stk);
+    T stackTop(int stk);
+    T size(int stk);
+    bool isEmpty(int stk);
+};
 
 #endif
