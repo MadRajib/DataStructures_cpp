@@ -81,6 +81,18 @@ bool LStack<T>::isEmpty(){
      return this->top->next == nullptr;
 }
 
+template <class T>
+void LStack<T>::print(){
+     Cell *iter = this->top;
+     while(iter->next!=nullptr){
+        std::cout<<iter->next->data<<" ";
+        iter = iter->next;
+     } 
+        
+
+    std::cout<<std::endl;
+}
+
 
 
 // For stacks using arrays
@@ -311,4 +323,73 @@ bool DoubleStack<T>::isEmpty(int stk){
     if(0 == stk) return 0 == this->count_1;
     else if(1 == stk) return 0 == this->count_2;
     throw std::invalid_argument("invalid stack para");
+}
+
+
+
+// sorting algos using stack on stack
+
+void stackInsertionSort(LStack<int> &items){
+    LStack<int> tmpStack = LStack<int>();
+    while(!items.isEmpty()){
+        int temp =  items.pop();
+        while (!tmpStack.isEmpty() && tmpStack.stackTop() > temp){
+            items.push(tmpStack.pop());
+        }
+        tmpStack.push(temp);
+    }
+
+    while(!tmpStack.isEmpty()){
+        items.push(tmpStack.pop());
+    }
+}
+
+void stackSelectionSort(LStack<int> &items){
+    LStack<int> tmpStack = LStack<int>();
+    int num_items = items.size();
+
+    for (size_t i = 0; i < num_items; ++i){
+        int large = items.stackTop();
+        int sindex = 0;
+        int while_count  = i;
+        int index =0;
+        while(!items.isEmpty() && while_count < num_items){
+            int temp = items.pop();
+            if(temp >large) {
+                large = temp;
+                sindex = index;
+            }
+            tmpStack.push(temp);
+            while_count++;
+            index++;
+        }
+        
+        items.push(large);
+        // std::cout<<"small :"<<small <<std::endl;
+        // std::cout<<"index :"<<sindex <<std::endl;
+        
+        sindex = while_count-i -1 - sindex;
+        
+        // std::cout<<"count :"<<index <<std::endl;
+        // std::cout<<"sindex :"<<sindex <<std::endl;
+
+        // std::cout<<"temp :"<<std::endl;
+        // tmpStack.print();
+        int c = 0;
+        while(!tmpStack.isEmpty()){
+            
+            if(c != sindex){
+                items.push(tmpStack.pop());
+            }else{
+                tmpStack.pop();    
+            }
+            c++;
+        }
+        // std::cout<<"items 1:";
+        // items.print();
+        while (!tmpStack.isEmpty()){
+            tmpStack.pop();
+        }
+        
+    }
 }

@@ -26,6 +26,7 @@ public:
     T stackTop();
     T size();
     bool isEmpty();
+    void print();
 };
 
 
@@ -84,5 +85,6 @@ public:
     T size(int stk);
     bool isEmpty(int stk);
 };
-
+void stackInsertionSort(LStack<int> &);
+void stackSelectionSort(LStack<int> &);
 #endif
