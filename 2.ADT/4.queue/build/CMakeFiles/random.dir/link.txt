@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/random.dir/src/main.cpp.o CMakeFiles/random.dir/src/queue.cpp.o  -o random 

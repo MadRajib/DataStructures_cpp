@@ -110,12 +110,7 @@ int main(int argc, char const *argv[]){
     // cout<<ll.pop()<<endl;
 
     stackSelectionSort(ll);
-    cout<<ll.pop()<<endl;
-    cout<<ll.pop()<<endl;
-    cout<<ll.pop()<<endl;
-    cout<<ll.pop()<<endl;
-    cout<<ll.pop()<<endl;
-    cout<<ll.pop()<<endl;
+    ll.print();
 
 
 

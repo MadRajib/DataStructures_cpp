@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/queue.h
+iostream
+-
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/4.queue/src/queue.cpp
+queue.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/4.queue/src/queue.h
+string.h
+-
+
