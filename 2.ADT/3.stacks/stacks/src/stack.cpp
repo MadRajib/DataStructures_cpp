@@ -55,6 +55,7 @@ T LStack<T>::pop(){
         T data = tmp->data; 
         this->top->next = tmp->next;
         delete tmp;
+        (this->count)--;
 
         return data;
     }
@@ -344,79 +345,36 @@ void stackInsertionSort(LStack<int> &items){
     } 
 }
 
-// void stackSelectionSort(LStack<int> &items){
-//     LStack<int> tmpStack = LStack<int>();
-//     int num_items = items.size();
-
-//     for (size_t i = 0; i < num_items; ++i){
-//         int large = items.stackTop();
-//         int sindex = 0;
-//         int while_count  = i;
-//         int index =0;
-//         while(!items.isEmpty() && while_count < num_items){
-//             int temp = items.pop();
-//             if(temp >large) {
-//                 large = temp;
-//                 sindex = index;
-//             }
-//             tmpStack.push(temp);
-//             while_count++;
-//             index++;
-//         }
-        
-//         items.push(large);
-        
-//         sindex = while_count-i -1 - sindex;
-//         int c = 0;
-//         while(!tmpStack.isEmpty()){
-            
-//             if(c != sindex){
-//                 items.push(tmpStack.pop());
-//             }else{
-//                 tmpStack.pop();    
-//             }
-//             c++;
-//         }
-//         while (!tmpStack.isEmpty()){
-//             tmpStack.pop();
-//         }
-        
-//     }
-// }
-
 void stackSelectionSort(LStack<int> &items){
     LStack<int> tmpStack = LStack<int>();
-    int num_items = items.size();
+    
+    for (size_t i = items.size(); i > 0; --i){
 
-    for (size_t i = 0; i < num_items; ++i){
         int large = items.stackTop();
         int l_index = 0;
-        int while_count  = num_items -i;
 
-        for (size_t i = 0; i < while_count; i++){
+        for (size_t j = 0; j < i; j++){
+            
             int temp = items.pop();
+            tmpStack.push(temp);
+
             if(temp >large) {
                 large = temp;
-                l_index = i;
+                // Save the location of large value in tmpstack!
+                l_index = tmpStack.size()-1;
             }
-            tmpStack.push(temp);
+            
         }
         
         items.push(large);
-        
-        int l_index_in_tmp = while_count - 1 - l_index;
-        int c = 0;
         while(!tmpStack.isEmpty()){
             
-            if(c != l_index_in_tmp){
+            if((tmpStack.size()-1) != l_index){
                 items.push(tmpStack.pop());
             }else{
                 tmpStack.pop();    
             }
-            c++;
-        }
-        while (!tmpStack.isEmpty()){
-            tmpStack.pop();
+            
         }
         
     }
