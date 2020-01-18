@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/sorting.h
+iostream
+-
+
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
+sorting.h
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.h
+

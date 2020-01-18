@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8.9)
+project(sort)
+include_directories(include)
+file(GLOB SOURCES "src/*cpp")
+add_executable(sort ${SOURCES})
+set(CMAKE_BUILD_TYPE Debug)
