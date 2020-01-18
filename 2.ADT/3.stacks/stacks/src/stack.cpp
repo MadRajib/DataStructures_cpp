@@ -354,7 +354,6 @@ void stackSelectionSort(LStack<int> &items){
         int l_index = 0;
 
         for (size_t j = 0; j < i; j++){
-            
             int temp = items.pop();
             tmpStack.push(temp);
 
@@ -363,7 +362,6 @@ void stackSelectionSort(LStack<int> &items){
                 // Save the location of large value in tmpstack!
                 l_index = tmpStack.size()-1;
             }
-            
         }
         
         items.push(large);
@@ -378,4 +376,127 @@ void stackSelectionSort(LStack<int> &items){
         }
         
     }
+}
+
+// Triple stack
+TripleStack::TripleStack(int sz){
+    if(sz>2){
+        array_sz = sz;
+        stack_size = array_sz/3;
+        stack =  new int[sz];
+
+        top_0 = -1;
+        btm_1 = stack_size;
+        top_1 = btm_1-1;
+        btm_2 = (2*stack_size);
+        top_2 = btm_2-1;
+        std::cout<<top_0<<":"<<0<<"; "<<top_1<<":"<<btm_1<<"; "<<top_2<<":"<<btm_2<<"; "<<std::endl;
+    }else{
+        throw;
+    }
+}
+
+
+TripleStack::~TripleStack(){
+}
+
+void TripleStack::push(int stack_num,int v){
+    switch (stack_num){
+    case 1:
+        if(!isFull(1)){
+            top_0++;
+            stack[top_0] = v;
+        }else{
+            std::cout<<"Stack 1 Full"<<std::endl;
+        }
+        break;
+    case 2:
+        if(!isFull(2)){
+            top_1++;
+            stack[top_1] = v;
+        }else{
+            std::cout<<"Stack 2 Full"<<std::endl;
+        }
+        break;
+    case 3:
+        if(!isFull(3)){
+            top_2++;
+            stack[top_2] = v;
+        }else{
+            std::cout<<"Stack 3 Full"<<std::endl;
+        }
+        break;  
+    default:
+        std::cout<<"Invalid Stack number"<<std::endl;
+    }
+}
+int TripleStack::pop(int stack_num){
+    switch (stack_num){
+    case 1:
+        if(!isEmpty(1)){
+            top_0--;
+            return stack[top_0];
+        }else{
+            std::cout<<"Stack 1 Empty!"<<std::endl;
+        }
+        break;
+    case 2:
+        if(!isEmpty(2)){
+            top_1--;
+            return stack[top_0];
+        }else{
+            std::cout<<"Stack 2 Empty!"<<std::endl;
+        }
+        break;
+    case 3:
+        if(!isEmpty(3)){
+            top_2--;
+            return stack[top_0];
+        }else{
+            std::cout<<"Stack 3 Empty!"<<std::endl;
+        }
+        break;  
+    default:
+        std::cout<<"Invalid Stack number"<<std::endl;
+    }
+}
+
+bool TripleStack::isEmpty(int stack_num){
+    switch (stack_num){
+    case 1:
+        return top_0 == -1 ;
+    case 2:
+        return top_1 == btm_1 -1 ;
+    case 3:
+        return top_2 == btm_2-1;  
+    default:
+        throw;
+    }
+}
+bool TripleStack::isFull(int stack_num){
+    switch (stack_num){
+    case 1:
+        return (top_0 + 1) == btm_1 ;
+    case 2:
+        return (top_1 + 1) == btm_2 ;
+    case 3:
+        return (top_2 + 1) == array_sz;  
+    default:
+        throw;
+    }
+}
+
+void TripleStack::print(){
+    for(auto i = 0;i<=top_0;i++){
+        std::cout<<stack[i]<<" ";
+    }
+    std::cout<<std::endl;
+    for(auto i = btm_1;i<=top_1;i++){
+        std::cout<<stack[i]<<" ";
+    }
+    std::cout<<std::endl;
+    for(auto i = btm_2;i<=top_2;i++){
+        std::cout<<stack[i]<<" ";
+    }
+    std::cout<<std::endl;
 }

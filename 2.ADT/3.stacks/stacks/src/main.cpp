@@ -92,13 +92,13 @@ int main(int argc, char const *argv[]){
     //cout<< sl.isEmpty(0) <<endl;
     //cout<< sl.isEmpty(1) <<endl;
 
-    LStack<int> ll = LStack<int>();
-    ll.push(34);
-    ll.push(3);
-    ll.push(31);
-    ll.push(98);
-    ll.push(92);
-    ll.push(23);
+    // LStack<int> ll = LStack<int>();
+    // ll.push(34);
+    // ll.push(3);
+    // ll.push(31);
+    // ll.push(98);
+    // ll.push(92);
+    // ll.push(23);
     // stackInsertionSort(ll);
     // cout<<ll.pop()<<endl;
     // cout<<ll.pop()<<endl;
@@ -109,10 +109,43 @@ int main(int argc, char const *argv[]){
 
     // cout<<ll.pop()<<endl;
 
-    stackSelectionSort(ll);
-    ll.print();
+    // stackSelectionSort(ll);
+    // ll.print();
 
+    TripleStack ts =  TripleStack(6);
+    ts.push(1,1);
+    ts.push(1,2);
+    ts.push(2,1);
+    ts.push(2,2);
+    ts.push(3,1);
+    ts.push(3,2);
+    ts.print();
+    ts.pop(1);
+    ts.print();
 
+    ts.pop(1);
+    ts.print();
 
+    ts.pop(2);
+    ts.print();
+    ts.pop(2);
+    ts.print();
+
+    ts.pop(3);
+    ts.print();
+
+    ts.pop(3);
+    ts.print();
+
+    ts.pop(3);
+    ts.print();
+
+    ts.push(1,4);
+    ts.push(1,5);
+    ts.push(2,6);
+    ts.push(2,7);
+    ts.push(3,8);
+    ts.push(3,9);
+    ts.print();
     return 0;
 }

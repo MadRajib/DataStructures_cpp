@@ -10,9 +10,13 @@
 iostream
 -
 
-/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/4.queue/src/queue.cpp
+/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/4.queue/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
 queue.h
 /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/2.ADT/4.queue/src/queue.h
-string.h
--
 

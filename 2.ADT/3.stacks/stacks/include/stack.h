@@ -85,6 +85,25 @@ public:
     T size(int stk);
     bool isEmpty(int stk);
 };
+
+class TripleStack{
+private:
+    int *stack,array_sz;
+    int stack_size;
+    int top_0, top_1,top_2;
+    int btm_1,btm_2;
+public:
+    TripleStack(int );
+    ~TripleStack();
+    void push(int ,int );
+    int pop(int);
+    bool isEmpty(int);
+
+    bool isFull(int);
+    void print();
+
+};
+
 void stackInsertionSort(LStack<int> &);
 void stackSelectionSort(LStack<int> &);
 #endif
