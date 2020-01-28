@@ -11,6 +11,7 @@ void make_heap(int *arr,int sz);
 
 void HeapSort(int *arr,int sz);
 void quick_sort(int *arr,int sz);
+void q_sort(int *arr,int left,int right);
 void selectPivot_i(int *arr,int left,int right);
-void partition(int *arr,int left,int right,int pivot_i);
+int partition(int *arr,int left,int right,int pivot_i);
 #endif

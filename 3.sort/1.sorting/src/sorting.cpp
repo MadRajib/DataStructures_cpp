@@ -118,9 +118,40 @@ void HeapSort(int *arr,int sz){
 }
 
 
-void quick_sort(int *arr,int sz);
+void quick_sort(int *arr,int sz){
+    q_sort(arr,0,sz-1);
+}
+
+void q_sort(int *arr,int left,int right){
+    if(left < right){
+        int pi = partition(arr,left,right,left);
+        q_sort(arr,left,pi-1);
+        q_sort(arr,pi+1,right);
+    }
+}
 void selectPivot_i(int *arr,int left,int right);
-void partition(int *arr,int left,int right,int pivot_i);
+
+
+int partition(int *arr,int left,int right,int pivot_i){
+    int store =  left;
+    int tmp = arr[right];
+    arr[right] = arr[pivot_i];
+    arr[pivot_i] = tmp;
+
+    for (int idx = left;idx<right;idx++){
+        if(arr[idx]<=arr[right]){
+            tmp = arr[idx];
+            arr[idx] = arr[store];
+            arr[store] = tmp;
+            store++;
+        }
+    }
+
+    tmp = arr[right];
+    arr[right] = arr[store];
+    arr[store] = tmp;
+    return store;
+}
 
 
 
