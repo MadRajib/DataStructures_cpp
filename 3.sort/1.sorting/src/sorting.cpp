@@ -154,7 +154,56 @@ int partition(int *arr,int left,int right,int pivot_i){
 }
 
 
+void merge_sort(int *arr,int sz){
+    m_sort(arr,0,sz);
+}
 
+void m_sort(int *arr,int start,int end){
+    if ((end - start) < 2) return;
+
+    int  mid = (end + start)/2;
+    m_sort(arr,start,mid);
+    m_sort(arr,mid,end);
+    
+    int i = start;
+    int j = mid+1;
+
+    int l = 0;
+    int tmpSz = end-start+1;
+    int temp[tmpSz];
+
+
+    for(int k=0;k<tmpSz;k++){
+        if (i>mid){
+            temp[l] = arr[j];
+            l ++;
+            j ++;
+        }
+        else if (j > end){
+            temp[l] = arr[i];
+            l ++;
+            i ++;
+        }
+        else if (arr[i] < arr[j]){
+            temp[l] = arr[i];
+            l ++;
+            i ++;
+        }
+        else{
+            temp[l] = arr[j];
+            l ++;
+            j ++;
+        }
+    }
+
+
+    for(int k=0;k<l;k++){
+        arr[start] = temp[k];
+        start += 1;
+    }
+
+    
+}
 
 void print(int *arr,size_t sz){
     for(size_t i = 0;i<sz;i++){

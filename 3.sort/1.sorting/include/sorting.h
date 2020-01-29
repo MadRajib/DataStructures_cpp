@@ -14,4 +14,8 @@ void quick_sort(int *arr,int sz);
 void q_sort(int *arr,int left,int right);
 void selectPivot_i(int *arr,int left,int right);
 int partition(int *arr,int left,int right,int pivot_i);
+
+
+void merge_sort(int *arr,int sz);
+void m_sort(int *arr,int start,int end);
 #endif

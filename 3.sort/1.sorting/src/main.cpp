@@ -14,7 +14,8 @@ int main(int argc, char const *argv[]){
     // build_heap(arr,4);
     // make_heap(arr,4);
     // HeapSort(arr,4);
-    quick_sort(arr,4);
+    // quick_sort(arr,4);
+    merge_sort(arr,4);
 
     print(arr,4);
     
