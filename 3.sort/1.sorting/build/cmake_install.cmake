@@ -1,4 +1,4 @@
-# Install script for directory: /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting
+# Install script for directory: /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

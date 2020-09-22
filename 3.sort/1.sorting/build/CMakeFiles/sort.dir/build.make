@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting
+CMAKE_SOURCE_DIR = /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build
+CMAKE_BINARY_DIR = /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sort.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/sort.dir/flags.make
 
 CMakeFiles/sort.dir/src/main.cpp.o: CMakeFiles/sort.dir/flags.make
 CMakeFiles/sort.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sort.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sort.dir/src/main.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sort.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sort.dir/src/main.cpp.o -c /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp
 
 CMakeFiles/sort.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sort.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp > CMakeFiles/sort.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp > CMakeFiles/sort.dir/src/main.cpp.i
 
 CMakeFiles/sort.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sort.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp -o CMakeFiles/sort.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp -o CMakeFiles/sort.dir/src/main.cpp.s
 
 CMakeFiles/sort.dir/src/sorting.cpp.o: CMakeFiles/sort.dir/flags.make
 CMakeFiles/sort.dir/src/sorting.cpp.o: ../src/sorting.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sort.dir/src/sorting.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sort.dir/src/sorting.cpp.o -c /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sort.dir/src/sorting.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sort.dir/src/sorting.cpp.o -c /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.cpp
 
 CMakeFiles/sort.dir/src/sorting.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sort.dir/src/sorting.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.cpp > CMakeFiles/sort.dir/src/sorting.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.cpp > CMakeFiles/sort.dir/src/sorting.cpp.i
 
 CMakeFiles/sort.dir/src/sorting.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sort.dir/src/sorting.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.cpp -o CMakeFiles/sort.dir/src/sorting.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.cpp -o CMakeFiles/sort.dir/src/sorting.cpp.s
 
 # Object files for target sort
 sort_OBJECTS = \
@@ -95,7 +95,7 @@ sort: CMakeFiles/sort.dir/src/main.cpp.o
 sort: CMakeFiles/sort.dir/src/sorting.cpp.o
 sort: CMakeFiles/sort.dir/build.make
 sort: CMakeFiles/sort.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable sort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable sort"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sort.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/sort.dir/clean:
 .PHONY : CMakeFiles/sort.dir/clean
 
 CMakeFiles/sort.dir/depend:
-	cd /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build /home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles/sort.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build /home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles/sort.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sort.dir/depend
 

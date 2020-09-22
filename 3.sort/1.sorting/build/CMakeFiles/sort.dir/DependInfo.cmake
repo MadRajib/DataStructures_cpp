@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp" "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles/sort.dir/src/main.cpp.o"
-  "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.cpp" "/home/madrajib/other_folders_F/Projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles/sort.dir/src/sorting.cpp.o"
+  "/home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/src/main.cpp" "/home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles/sort.dir/src/main.cpp.o"
+  "/home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/src/sorting.cpp" "/home/madrajib/other_folders_F/projects/algorithms_practice/cpp/3.sort/1.sorting/build/CMakeFiles/sort.dir/src/sorting.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
